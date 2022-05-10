@@ -3,7 +3,7 @@ from random import randint
 
 # The snake game window setup
 curses.initscr()
-window = curses.newwin(25, 75, 0, 0)
+window = curses.newwin(20, 75, 0, 0)
 window.keypad(1)
 curses.noecho()
 window.border(0)
@@ -49,7 +49,7 @@ while key != ESC:
 
     # Check if snake hits the border and if runs over
     if s == 0: break
-    if s == 24: break
+    if s == 19: break
     if x == 0: break
     if x == 74: break
 
@@ -59,7 +59,7 @@ while key != ESC:
         score += 1
         food = ()
         while food == ():
-            food = (randint(1, 23), randint(1, 73))
+            food = (randint(1, 18), randint(1, 73))
             if food in snake: 
                 food = ()
 
