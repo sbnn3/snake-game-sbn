@@ -13,6 +13,7 @@ snake = [(4, 10), (4, 9), (4,8)]
 food = (10, 20)
 
 window.addch(food[0], food[1], '#')
+
 # The snake game structure and logic
 score = 0
 
@@ -31,7 +32,19 @@ while key != ESC:
     if key not in [curses.KEY_RIGHT, curses.KEY_LEFT, curses.KEY_UP, curses.KEY_DOWN, ESC]:
         key = last_key
 
-    
+    # Coordinates Calculation
+    s = snake[0][0]
+    x = snake[0][1]
+    if key == curses.KEY_UP:
+        s -= 1
+    if key == curses.KEY_DOWN:
+        s += 1
+    if key == curses.KEY_LEFT:
+        x -= 1
+    if key == curses.KEY_RIGHT:
+        x += 1
+
+    snake.insert(0, (s, x))
 
     for c in snake: 
         window.addch(c[0], c[1], '-')
