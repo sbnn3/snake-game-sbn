@@ -46,6 +46,15 @@ while key != ESC:
 
     snake.insert(0, (s, x))
 
+    # Check if snake hits the border and if runs over
+    if s == 0: break
+    if s == 19: break
+    if x == 0: break
+    if x == 59: break
+
+    if snake[0] in snake[1:]: break
+
+
     for c in snake: 
         window.addch(c[0], c[1], '-')
 
