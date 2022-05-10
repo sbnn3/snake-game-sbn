@@ -12,10 +12,18 @@ window.nodelay(1)
 snake = [(4, 10), (4, 9), (4,8)]
 food = (10, 20)
 
+window.addch(food[0], food[1], '#')
 # The snake game structure and logic
 score = 0
 
-while True:
+
+ESC = 27
+key = curses.KEY_RIGHT
+
+while key != ESC:
+    window.addnstr(0, 2, 'Score ', + str(score) + ' ')
+    window.timeout(150 - (len(snake)) // 5 + len(snake) // 10 % 120)
+
     event = window.getch()
 
     for c in snake: 
