@@ -1,4 +1,5 @@
 import curses
+from random import randint
 
 # The snake game window setup
 curses.initscr()
@@ -22,7 +23,7 @@ ESC = 27
 key = curses.KEY_RIGHT
 
 while key != ESC:
-    window.addnstr(0, 2, 'Score ', + str(score) + ' ')
+    window.addstr(0, 2, 'Score ' + str(score) + ' ')
     window.timeout(150 - (len(snake)) // 5 + len(snake) // 10 % 120)
 
     last_key = key
@@ -54,11 +55,20 @@ while key != ESC:
 
     if snake[0] in snake[1:]: break
 
+    if snake[0] == food:
+        score += 1
+        food = ()
+        while food == ():
+            food = (randint(1, 18), randint(1, 58))
+            if food in snake: 
+                food = ()
 
-    for c in snake: 
-        window.addch(c[0], c[1], '-')
+        window.addch(food[0], food[1], '#')
+    else: 
+        last = snake.pop()
+        window.addch(last[0], last[1], ' ')
 
-    window.addch(food[0], food[1], '#')
+    window.addch(snake[0][0], snake[0][1], '-')
 
 curses.endwin()
 print(f"The final score is = {score}")
