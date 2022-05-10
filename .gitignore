@@ -9,4 +9,4 @@ node_modules/
 *.mo
 *.vo
 *.pyc
-venv
+venv 
