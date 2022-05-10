@@ -28,7 +28,11 @@ while key != ESC:
     event = window.getch()
     key = event if event != -1 else last_key
 
+    if key not in [curses.KEY_RIGHT, curses.KEY_LEFT, curses.KEY_UP, curses.KEY_DOWN, ESC]:
+        key = last_key
+
     
+
     for c in snake: 
         window.addch(c[0], c[1], '-')
 
