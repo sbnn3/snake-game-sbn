@@ -24,8 +24,11 @@ while key != ESC:
     window.addnstr(0, 2, 'Score ', + str(score) + ' ')
     window.timeout(150 - (len(snake)) // 5 + len(snake) // 10 % 120)
 
+    last_key = key
     event = window.getch()
+    key = event if event != -1 else last_key
 
+    
     for c in snake: 
         window.addch(c[0], c[1], '-')
 
