@@ -13,7 +13,8 @@ A live version of this project can be found <a href="https://snake-game-sbn.hero
 
 # **Table of Content**
 <ul>
-<li><a href="#UX">UX</a></li>
+<li><a href="#ux">UX</a></li>
+<li><a href="#user-stories">User Stories</a></li>
 <li><a href="#user-goals">User Goals</a></li>
 <li><a href="#project-requirements">Project Requirements</a></li>
 <li><a href="#features">Features</a></li>
@@ -27,6 +28,25 @@ A live version of this project can be found <a href="https://snake-game-sbn.hero
 
 # **UX** 
 
+### **This game is ment for:**
+<ul>
+<li>All individuals that wants to relax playing a good game.</li>
+<li>All individuals that wants to remember for old times.</li></ul><hr>
+
+### **User Stories**
+<ul>
+<li>I want to relax playing a game.</li>
+<li>I want to know how good i am in the game.</li>
+<li>I want to know how many points i can have at the end.</li>
+<li>I want to remember the old times.</li></ul><hr>
+
+### **User Goals**
+
+*To make every user happy and have a good time in the game.*<hr>
+
+### **Project Requirements**
+
+*Python application using libraries and deployed to a cloud-based platform.*<hr>
 
 
 

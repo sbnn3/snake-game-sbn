@@ -10,7 +10,7 @@ window.border(0)
 window.nodelay(1)
 
 # The snake and food variables
-snake = [(4, 10), (4, 9), (4,8)]
+snake = [(4, 10), (4, 9), (4, 8)]
 food = (10, 20)
 
 window.addch(food[0], food[1], '#')
@@ -48,23 +48,28 @@ while key != ESC:
     snake.insert(0, (s, x))
 
     # Check if snake hits the border and if runs over
-    if s == 0: break
-    if s == 19: break
-    if x == 0: break
-    if x == 59: break
+    if s == 0:
+        break
+    if s == 19:
+        break
+    if x == 0:
+        break
+    if x == 59:
+        break
 
-    if snake[0] in snake[1:]: break
+    if snake[0] in snake[1:]:
+        break
 
     if snake[0] == food:
         score += 1
         food = ()
         while food == ():
             food = (randint(1, 18), randint(1, 58))
-            if food in snake: 
+            if food in snake:
                 food = ()
 
         window.addch(food[0], food[1], '#')
-    else: 
+    else:
         last = snake.pop()
         window.addch(last[0], last[1], ' ')
 
