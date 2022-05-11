@@ -21,7 +21,6 @@ A live version of this project can be found <a href="https://snake-game-sbn.hero
 <li><a href="#technologies-used">Technologies Used</a></li>
 <li><a href="#testing">Testing</a></li>
 <li><a href="#development-and-deployment">Development and Deployment</a></li>
-<li><a href="#content">Content</a></li>
 <li><a href="#credits">Credits</a></li>
 <li><a href="#acknowledgment">Acknowledgment</a></li>
 </ul><hr>
@@ -89,4 +88,59 @@ At the end in case you'll lose, the final score of points will appear on console
 
 ### **Validator Testing**
 
-*The code has been tested on <a href="http://pep8online.com/">PEP8 Online</a>*
+*The code has been tested on <a href="http://pep8online.com/">PEP8 Online</a>*<hr><br>
+
+# **Development and Deployment**
+<br>
+
+The development environment used for this project was GitPod. <br>
+To track the development stage and handle version control regular commits and pushes to GitHub has been conducted.<br>
+The GitPod environment was created using a template provided by Code Institute.<br><br>
+The live version was deployed using <a href="https://heroku.com/">Heroku</a><br><br>
+
+### **Steps taken to deploy the project via CLI**
+<br>
+
+<ul>
+<li>Access <a href="https://heroku.com/">Heroku</a></li>
+<li>Login or Create an account if necessary.</li>
+<li>Click "New" button on Heroku Dashboard and after select "Create new app".</li>
+<li>Write the name for your app and select your region, after click "Create App".</li>
+<li>In the settings tab of your new app, create a config var</li>
+<ul><li>Name is: PORT and value is: 8000</li></ul>
+<li>Create two buildpacks, the first have to be Python and second have to be Nodejs.</li>
+</ul><br><hr>
+
+### **In order to deploy the project via Heroku CLI, you have to follow the next steps**
+<br>
+<ul>
+<li>Login to Heroku on GitPod Project and enter your details.</li>
+<ul><li>command: heroku login -i</li></ul>
+<li>Get your app name from Heroku.</li>
+<ul><li>command: heroku apps</li></ul>
+<li>Set the Heroku remote (Replace app_name with your actual app name).</li>
+<ul><li>command: heroku git:remote app_name</li></ul>
+<li>Add, commit and push to GitHub.</li>
+<ul><li>command: git add . && git commit -m "Deploy to Heroku via CLI"</li></ul>
+<li>Push to both, GitHub and Heroku.</li>
+<ul><li>command: git push origin main</li>
+<li> command: git push heroku main</li></ul><br>
+After these steps the application was deployed to <a href="https://snake-game-sbn.herokuapp.com/">snake-game-sbn.herokuapp.com</a></ul><hr><br>
+
+# **Credits**
+
+### **For code inspiration, help and advice**
+<br>
+
+<ul>
+<li><a href="https://github.com/sbnn3/love-sandwiches">Code Institute Essential Project - Love Sandwiches</a> - for inspiration and understanding on how to develop the project.</li>
+<li><a href="https://codeinstitute.net/">Code Institute</a> - for all course material leading up to this project.</li>
+<li><a href="https://www.youtube.com/watch?v=M_npdRYD4K0">Youtube Tutorial</a> -  for inspiration and better understanding of steps that i have to take to develop the Snake Project.</li>
+<li><a href="https://www.youtube.com/watch?v=rbasThWVb">Youtube Tutorial</a> -  for inspiration and better understanding of steps that i have to take to develop the Snake Project.</li>
+</ul><hr><br>
+
+### **Acknowledgment**
+<br>
+
+*Martina Terlevic - My mentor at Code Institute for permanently support and feedback.*<br>
+*Code Institute Tututor Team - For help during the lessons and challenges*<br>
