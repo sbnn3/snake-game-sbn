@@ -88,7 +88,11 @@ At the end in case you'll lose, the final score of points will appear on console
 
 ### **Validator Testing**
 
-*The code has been tested on <a href="http://pep8online.com/">PEP8 Online</a>*<hr><br>
+*The code has been tested on <a href="http://pep8online.com/">PEP8 Online</a>*<br>
+*One error appears on line 33, the line is too long. I tried to short the line, but Python is not happy with that and appeared 3 more errors, so i kept the line how it is (see screenshot).*
+<br>
+
+![Error](/images/error.png "Error")<hr><br>
 
 # **Development and Deployment**
 <br>
@@ -139,7 +143,7 @@ After these steps the application was deployed to <a href="https://snake-game-sb
 <li><a href="https://www.youtube.com/watch?v=rbasThWVb">Youtube Tutorial</a> -  for inspiration and better understanding of steps that i have to take to develop the Snake Project.</li>
 </ul><hr><br>
 
-### **Acknowledgment**
+# **Acknowledgment**
 <br>
 
 *Martina Terlevic - My mentor at Code Institute for permanently support and feedback.*<br>
